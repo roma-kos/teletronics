@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+address {
+  @apply not-italic;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+* {
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+
+button{
+  @apply flex items-center gap-1 px-4 py-1 bg-emerald-500 font-black text-white rounded-xl hover:bg-emerald-400 transition uppercase
+}
+
+button.icon{
+  @apply bg-transparent text-black hover:bg-gray-200 px-1
+}
+
+button.outlined{
+  @apply bg-transparent border border-emerald-500 text-emerald-500 hover:bg-emerald-400 hover:text-white
+}
+
+button.outlined.error{
+  @apply border-red-500 text-red-500 hover:bg-red-400 hover:text-white
+}
+
+input{
+  @apply border p-2 rounded-lg
+}
