@@ -37,6 +37,6 @@ npm run test:e2e
 ```bash
 # run in docker container
 docker build -t teletronics .
-docker run -it -p 8080:8080 --rm --name teletronics .
+docker run -it -p 8080:8080 --rm --name teletronics teletronics
 
 ```
